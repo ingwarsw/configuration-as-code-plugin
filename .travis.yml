@@ -8,5 +8,8 @@ jdk:
   - openjdk8
   - openjdk11
 
+services:
+  - docker
+
 before_script:
   mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
