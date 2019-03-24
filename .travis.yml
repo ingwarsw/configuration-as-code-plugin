@@ -13,3 +13,6 @@ services:
 
 script:
   - mvn clean package -B
+
+notifications:
+  email: false
