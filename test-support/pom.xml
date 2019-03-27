@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>io.jenkins.configuration-as-code</groupId>
+    <version>${revision}${changelist}</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>configuration-as-code-tests</artifactId>
+  <description>Custom configurator to support third-party plugins for the Configuration as Code plugin</description>
+  <name>Configuration as Code Test Support</name>
+  <!-- This is an incubator for code we expect to get hosted by target plugins -->
+
+  <properties>
+    <useBeta>true</useBeta>
+    <access-modifier-checker.skip>true</access-modifier-checker.skip>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.github.stefanbirkner</groupId>
+      <artifactId>system-rules</artifactId>
+      <version>1.19.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>vault</artifactId>
+      <version>1.10.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+    
+  </dependencies>
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/configuration-as-code-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/configuration-as-code-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/configuration-as-code-plugin</url>
+    <tag>${scmTag}</tag>
+  </scm>
+</project>

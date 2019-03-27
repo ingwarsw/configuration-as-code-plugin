@@ -32,9 +32,8 @@
 
     <dependency>
       <groupId>io.jenkins</groupId>
-      <artifactId>configuration-as-code</artifactId>
+      <artifactId>configuration-as-code-tests</artifactId>
       <version>${project.version}</version>
-      <type>test-jar</type>
     </dependency>
 
     <dependency>
